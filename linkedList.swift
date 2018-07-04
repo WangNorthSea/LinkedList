@@ -14,7 +14,7 @@ public class LinkedList {
 public func createLinkedList(count: Int) -> LinkedList {
     let HeadNode = LinkedList(0)
     var Tail = HeadNode
-    assert(count >= 1, "No linkedList was created.")
+    assert(count >= 1, "No linked list was created.")
     var Node = LinkedList(0)
     HeadNode.address = Node
     Tail = Node
@@ -31,14 +31,14 @@ public func showLinkedList(_ HeadNode: LinkedList) {
     if Tail == nil {
         return
     }
-    print("The value of this linkedList is: ")
+    print("The values of this linked list are: ")
     while Tail != nil {
         print(Tail!.value)
         Tail = Tail!.address
     }
 }
 
-print("Please enter the number of node in this linkedList: ")
+print("Please enter the number of nodes in this linked list: ")
 let count = Int(readLine()!)!
 let lHead = createLinkedList(count: count)
 var Tail = lHead.address
